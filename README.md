@@ -161,7 +161,7 @@ Same root cause as Issue #1. Custom textures injected into the Shower Scene may 
 ## 🔧 Specialized Plugins / Специализированные плагины
 
 ### Lightswitch Canvas UI Injector (Separate DLL) / Lightswitch Canvas UI Injector (отдельная DLL)
-https://www.youtube.com/watch?v=rtg2ytVlMmo
+
 [EN]
 The **Lightswitch** (`LightswitchOn`) is a UI element (`UnityEngine.UI.Image`), not a 2D scene sprite. The `TextureOverriderManager` does not support Canvas UI sprites, so the Lightswitch requires a **separate C# DLL plugin** for texture injection.
 
@@ -175,7 +175,7 @@ The **Lightswitch** (`LightswitchOn`) is a UI element (`UnityEngine.UI.Image`), 
 ---
 
 ### Cuddle Ultimate Bedroom Injector (Separate DLL) / Cuddle Ultimate Bedroom Injector (отдельная DLL)
-
+https://www.youtube.com/watch?v=rtg2ytVlMmo
 [EN]
 The **Cuddle Scene** does not have a `TextureOverriderManager` attached. Unlike other isolated scenes (Shower, Clothier Shop, etc.), the Cuddle Scene requires **direct C# DLL injection** via a dedicated plugin.
 
