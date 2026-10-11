@@ -1,5 +1,3 @@
-# MDRG-Modding-Toolkit
-A suite of modding tools for MDRG: Runtime Texture Injector, Cuddle Injector, Lightswitch Injector &amp; SuperParser SDK.
 # 🛠️ MDRG Modding Toolkit / Набор инструментов для моддинга MDRG
 
 > **Professional runtime texture injection & modding suite for MDRG**
@@ -25,7 +23,7 @@ This repository contains a comprehensive suite of tools designed for **artists, 
 - 🎯 Runtime texture injection via clean in-game GUI (F9) / Инъекция текстур в рантайме через чистый внутриигровой интерфейс (F9)
 - 🔍 Dynamic scene detection (auto-find nodes without hardcoded paths) / Динамическое обнаружение сцен (авто-поиск нод без жёстко заданных путей)
 - 💾 Support for 21 room nodes + 8 isolated scenes / Поддержка 21 ноды комнаты + 8 изолированных сцен
-- 🧩 Three specialized plugins for different injection scenarios / Три специализированных плагина для разных сценариев инъекции
+- 🧩 Four specialized plugins for different injection scenarios / Четыре специализированных плагина для разных сценариев инъекции
 - 📚 Complete technical documentation (`MANIFEST.md`) with node atlas, PPU values, and Lua API reference / Полная техническая документация (`MANIFEST.md`) с атласом нод, значениями PPU и справочником Lua API
 - 🌐 Bilingual codebase (English/Russian comments) / Двуязычная кодовая база (английские/русские комментарии)
 
@@ -36,8 +34,72 @@ This repository contains a comprehensive suite of tools designed for **artists, 
 | Plugin / Плагин | Purpose / Назначение | Target / Цель |
 |---|---|---|
 | **MDRG Runtime Texture Injector** | Debug & preview tool for instant texture replacement / Отладочный инструмент для мгновенной замены текстур | Room + all isolated scenes / Комната + все изолированные сцены |
+
+https://www.youtube.com/watch?v=jBo-dtZlfl4
+
 | **Cuddle Ultimate Bedroom Injector** | Continuous texture override for the Cuddle Scene / Непрерывное переопределение текстур в сцене обнимашек | Cuddle Scene (3 nodes) / Сцена обнимашек (3 ноды) |
+
+https://www.youtube.com/watch?v=rtg2ytVlMmo
+
 | **Lightswitch Canvas UI Injector** | UI element (`UnityEngine.UI.Image`) texture override / Переопределение текстур UI-элемента | Lightswitch (`LightswitchOn`) / Выключатель (`LightswitchOn`) |
+
+
+
+| **SuperParser v6.5.1** | Advanced diagnostic SDK for reverse-engineering / Продвинутый диагностический SDK для реверс-инжиниринга | Full game architecture analysis / Полный анализ архитектуры игры |
+
+---
+
+## 🧠 Advanced SDK: SuperParser v6.5.1 / Продвинутый SDK: SuperParser v6.5.1
+
+[EN]
+**SuperParser** is the diagnostic engine behind the entire MDRG Modding Toolkit. By pressing **F5** in-game, it performs a deep scan of the IL2CPP assembly and generates **15 structured reports** covering every aspect of the game's architecture.
+
+**What it does:**
+- 📦 **Folder 1** — PNG textures extracted directly from VRAM (no UABEA needed)
+- 📦 **Folder 2** — Full scene node hierarchy dump
+- 📦 **Folder 3** — Complete Live2D analysis (CubismParameters, HitAreas, ButtonList)
+- 📦 **Folder 4** — Core Managers Passport (all 6 TextureOverriderManager instances with IDs)
+- 📦 **Folder 5** — Views and Scenes containers map
+- 📦 **Folder 6** — Merged Interlock (node-to-manager mapping with ready-to-use Lua templates)
+- 📦 **Folder 7** — Sprite Info (exact PPU, Pivot, Resolution, SortingLayer per sprite)
+- 📦 **Folder 8** — Win32 UI & Boolean interceptor
+- 📦 **Folder 9** — Global Architecture Map (singletons and manager-less scenes)
+- 📦 **Folder 10** — Popup & ClonePopup runtime map
+- 📦 **Folder 11** — Deep inventory dump with missing items detection
+- 📦 **Folder 12** — Game state (Fungus, Variables, Save data)
+- 📦 **Folder 13** — ItemManager debug (real singleton search via 3 methods)
+- 📦 **Folder 14** — Missing Items Deep Dive
+- 📦 **Folder 15** — Cuddle Scene & Lua API Master Report
+
+**Why it matters:** Without SuperParser, we wouldn't know the exact PPU values (29.860819 for Clothier Shop, 42.737896 for Halloween Cat), the manager IDs, or the hierarchy paths that make the Runtime Texture Injector work.
+
+**Status:** ✅ Fully functional | **Compatibility:** PC only (MelonLoader required)
+
+---
+
+[RU]
+**SuperParser** — это диагностический движок, стоящий за всем набором инструментов MDRG. По нажатию **F5** в игре он выполняет глубокое сканирование IL2CPP-сборки и генерирует **15 структурированных отчётов**, охватывающих каждый аспект архитектуры игры.
+
+**Что он делает:**
+- 📦 **Папка 1** — PNG-текстуры, извлечённые напрямую из VRAM (без UABEA)
+- 📦 **Папка 2** — Полный дамп иерархии нод сцены
+- 📦 **Папка 3** — Полный анализ Live2D (CubismParameters, HitAreas, ButtonList)
+- 📦 **Папка 4** — Паспорт ключевых менеджеров (все 6 инстансов TextureOverriderManager с ID)
+- 📦 **Папка 5** — Карта контейнеров Views и Scenes
+- 📦 **Папка 6** — Merged Interlock (связи нод с менеджерами с готовыми Lua-шаблонами)
+- 📦 **Папка 7** — Информация о спрайтах (точные PPU, Pivot, разрешение, SortingLayer)
+- 📦 **Папка 8** — Win32 UI и Boolean интерцептор
+- 📦 **Папка 9** — Глобальная карта архитектуры (синглтоны и сцены без менеджеров)
+- 📦 **Папка 10** — Карта Popup и ClonePopup в рантайме
+- 📦 **Папка 11** — Глубокий дамп инвентаря с обнаружением пропавших предметов
+- 📦 **Папка 12** — Состояние игры (Fungus, переменные, данные сохранения)
+- 📦 **Папка 13** — Отладка ItemManager (поиск реального синглтона 3 методами)
+- 📦 **Папка 14** — Глубокий анализ пропавших предметов
+- 📦 **Папка 15** — Отчёт по сцене обнимашек и Lua API
+
+**Почему это важно:** Без SuperParser мы бы не знали точные значения PPU (29.860819 для магазина Аннали, 42.737896 для Halloween Cat), ID менеджеров или пути в иерархии, благодаря которым работает Runtime Texture Injector.
+
+**Статус:** ✅ Полностью функционален | **Совместимость:** Только PC (требуется MelonLoader)
 
 ---
 
@@ -45,55 +107,23 @@ This repository contains a comprehensive suite of tools designed for **artists, 
 
 [EN]
 1. Make sure you have [MelonLoader](https://github.com/LavaGang/MelonLoader) installed
-2. Download `MDRG_Runtime_Texture_Injector_v1.0.4.dll` from [Releases](../../releases)
-3. Place it in your game's `Mods/` folder
+2. Download DLL files from [Releases](../../releases)
+3. Place them in your game's `Mods/` folder
 4. Launch the game
-5. Press **F9** to open the injector GUI
-6. Select a node (e.g., `Bed` or `Window`), click "OPEN WINDOWS EXPLORER", choose your PNG
-7. Done! Texture injected instantly, no game restart required
+5. Press **F9** to open the Runtime Texture Injector GUI
+6. Press **F5** to run SuperParser diagnostic dump
+7. Select a node, click "OPEN WINDOWS EXPLORER", choose your PNG
+8. Done! Texture injected instantly, no game restart required
 
 [RU]
 1. Убедитесь, что у вас установлен [MelonLoader](https://github.com/LavaGang/MelonLoader)
-2. Скачайте файл `MDRG_Runtime_Texture_Injector_v1.0.4.dll` из раздела [Releases](../../releases)
-3. Поместите его в папку `Mods/` в директории вашей игры
+2. Скачайте DLL-файлы из раздела [Releases](../../releases)
+3. Поместите их в папку `Mods/` в директории вашей игры
 4. Запустите игру
-5. Нажмите клавишу **F9** для открытия интерфейса инжектора
-6. Выберите нужную ноду (например, `Bed` или `Window`), нажмите кнопку "OPEN WINDOWS EXPLORER" и выберите ваш PNG-файл
-7. Готово — текстура заменена мгновенно, без перезапуска игры
-
----
-
-## 🎥 Video Demonstration / Видео-демонстрация
-
-[EN]
-Watch the MDRG Runtime Texture Injector in action. The main video shows all scenes except the Shower Scene (which contains adult content).
-
-[RU]
-Смотрите MDRG Runtime Texture Injector в действии. Основное видео показывает все сцены, кроме сцены в душе, которая содержит контент для взрослых.
-
-### 🟢 Main Demo (YouTube - Safe for Work) / Основное демо (YouTube - безопасный контент)
-https://www.youtube.com/watch?v=jBo-dtZlfl4&list=PLVeYxao2N7xo
-- **Shows / Показано:** Room (21 nodes), Annalie's Clothier Shop, Melissa's Grocery Shop, Cuddle Scene, Missionary Scene, Dynamic View Scenes / Комната (21 нода), магазин Аннали, магазин Мелиссы, сцена обнимашек, миссионерская сцена, динамические сцены
-- **Duration / Длительность:** ~5-7 minutes / минут
-- **Link / Ссылка:** `[YOUTUBE_LINK]`
-
-### 🔴 Shower Scene Demo (External - NSFW Warning) / Демо сцены в душе (внешний ресурс - предупреждение: контент для взрослых)
-
-- **Shows / Показано:** Texture injection in the Shower Scene (contains adult content) / Инъекция текстур в сцене душа (содержит откровенный контент)
-- ⚠️ **WARNING / ПРЕДУПРЕЖДЕНИЕ:** This video contains explicit content (18+) / Данное видео содержит откровенный контент (18+)
-- **Platform / Платформа:** GitLab (external hosting / внешний хостинг)
-
-<details>
-<summary><b>🔞 Click to expand Shower Scene link (NSFW 18+) / Нажмите, чтобы развернуть ссылку на сцену душа (18+)</b></summary>
-<br>
-[EN] The Shower Scene demonstration is hosted on an external platform due to content restrictions.
-[RU] Демонстрация сцены в душе размещена на внешней платформе в связи с ограничениями на контент.
-<br><br>
-🔗 <a href="[GITLAB_LINK]" target="_blank">Watch Shower Scene Demo on GitLab / Смотреть демо сцены в душе на GitLab</a>
-<br><br>
-<em>[EN] This video is intended solely for demonstrating the technical capabilities of the MDRG Runtime Texture Injector. It shows how custom textures can be injected into the Shower Scene nodes (Shower Wall, Shower Back, Shower Back Props, Foreground).</em>
-<em>[RU] Это видео предназначено исключительно для демонстрации технических возможностей MDRG Runtime Texture Injector. Оно показывает процесс инъекции пользовательских текстур в ноды сцены душа (Shower Wall, Shower Back, Shower Back Props, Foreground).</em>
-</details>
+5. Нажмите **F9** для открытия интерфейса Runtime Texture Injector
+6. Нажмите **F5** для запуска диагностического дампа SuperParser
+7. Выберите нужную ноду, нажмите кнопку "OPEN WINDOWS EXPLORER" и выберите ваш PNG-файл
+8. Готово — текстура заменена мгновенно, без перезапуска игры
 
 ---
 
@@ -148,13 +178,13 @@ Same root cause as Issue #1. Custom textures injected into the Shower Scene may 
 
 | Scene / Сцена | Manager ID | Offset Issue? / Проблема смещения? |
 |---|---|---|
-| Room (Player Bedroom) / Комната | `"Room"` | ❌ No / Нет |
+| Room (Player Bedroom) / Комната | `"Room"` | ❌ No / Нет | - It works fine.
 | Clothier Shop (Annalie) / Магазин Аннали | `"Clothier"` | ⚠️ Yes (PPU mismatch) / Да (несоответствие PPU) |
-| Changing Room (Annalie Fitting) / Примерочная | `""` | ❌ No / Нет |
+| Changing Room (Annalie Fitting) / Примерочная | `""` | ❌ No / Нет | - It works fine.
 | Shower Scene / Сцена в душе | `"shower"` | ⚠️ Yes (PPU mismatch) / Да (несоответствие PPU) |
-| Missionary Scene / Миссионерская сцена | `"room_missionary"` | ❌ No / Нет |
-| Melissa Grocery Shop / Магазин Мелиссы | `"Shop"` | ❌ No / Нет |
-| Cuddle Scene / Сцена обнимашек | *(no manager, direct inject)* | ❌ No / Нет |
+| Missionary Scene / Миссионерская сцена | `"room_missionary"` | ❌ No / Нет | - It works fine.
+| Melissa Grocery Shop / Магазин Мелиссы | `"Shop"` | ❌ No / Нет | - It works fine.
+| Cuddle Scene / Сцена обнимашек | *(no manager, direct inject)* | ❌ No / Нет | - It works fine.
 
 ---
 
@@ -176,7 +206,7 @@ The **Lightswitch** (`LightswitchOn`) is a UI element (`UnityEngine.UI.Image`), 
 
 ### Cuddle Ultimate Bedroom Injector (Separate DLL) / Cuddle Ultimate Bedroom Injector (отдельная DLL)
 
-https://www.youtube.com/watch?v=rtg2ytVlMmo
+
 
 [EN]
 The **Cuddle Scene** does not have a `TextureOverriderManager` attached. Unlike other isolated scenes (Shower, Clothier Shop, etc.), the Cuddle Scene requires **direct C# DLL injection** via a dedicated plugin.
