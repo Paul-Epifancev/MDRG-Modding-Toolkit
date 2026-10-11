@@ -72,7 +72,7 @@ Watch the MDRG Runtime Texture Injector in action. The main video shows all scen
 Смотрите MDRG Runtime Texture Injector в действии. Основное видео показывает все сцены, кроме сцены в душе, которая содержит контент для взрослых.
 
 ### 🟢 Main Demo (YouTube - Safe for Work) / Основное демо (YouTube - безопасный контент)
-
+https://www.youtube.com/watch?v=jBo-dtZlfl4&list=PLVeYxao2N7xo
 - **Shows / Показано:** Room (21 nodes), Annalie's Clothier Shop, Melissa's Grocery Shop, Cuddle Scene, Missionary Scene, Dynamic View Scenes / Комната (21 нода), магазин Аннали, магазин Мелиссы, сцена обнимашек, миссионерская сцена, динамические сцены
 - **Duration / Длительность:** ~5-7 minutes / минут
 - **Link / Ссылка:** `[YOUTUBE_LINK]`
