@@ -161,7 +161,7 @@ Same root cause as Issue #1. Custom textures injected into the Shower Scene may 
 ## 🔧 Specialized Plugins / Специализированные плагины
 
 ### Lightswitch Canvas UI Injector (Separate DLL) / Lightswitch Canvas UI Injector (отдельная DLL)
-
+https://www.youtube.com/watch?v=rtg2ytVlMmo
 [EN]
 The **Lightswitch** (`LightswitchOn`) is a UI element (`UnityEngine.UI.Image`), not a 2D scene sprite. The `TextureOverriderManager` does not support Canvas UI sprites, so the Lightswitch requires a **separate C# DLL plugin** for texture injection.
 
