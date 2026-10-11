@@ -43,7 +43,7 @@ https://www.youtube.com/watch?v=rtg2ytVlMmo
 
 | **Lightswitch Canvas UI Injector** | UI element (`UnityEngine.UI.Image`) texture override / Переопределение текстур UI-элемента | Lightswitch (`LightswitchOn`) / Выключатель (`LightswitchOn`) |
 
-
+https://www.youtube.com/watch?v=r_53JwQ57hc
 
 | **SuperParser v6.5.1** | Advanced diagnostic SDK for reverse-engineering / Продвинутый диагностический SDK для реверс-инжиниринга | Full game architecture analysis / Полный анализ архитектуры игры |
 
