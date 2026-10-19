@@ -1,13 +1,20 @@
-> ⚠️ **IMPORTANT WARNING / ВАЖНОЕ ПРЕДУПРЕЖДЕНИЕ** ⚠️
-> This mod is and will **ALWAYS be 100% FREE and OPEN SOURCE**. 
-> I do not have a Patreon, Ko-fi, or any paid subscriptions. 
-> **If you see this mod or my code behind a paywall (including the developer's Patreon), it has been stolen from the community.** 
-> Please do not support content theft. Download only from this official GitHub repository.
-> 
-> *(Этот мод есть и всегда будет **НАВСЕГДА БЕСПЛАТНЫМ и с ОТКРЫТЫМ ИСХОДНЫМ КОДОМ**. 
-> У меня нет Patreon или платных подписок. 
-> **Если вы видите этот мод или мой код за платным доступом (включая Patreon разработчика), он был украден у комьюнити.** 
-> Пожалуйста, не поддерживайте воровство контента. Скачивайте только из этого официального репозитория GitHub.)*
+⚠️ IMPORTANT LICENSING WARNING / ВАЖНОЕ ПРЕДУПРЕЖДЕНИЕ О ЛИЦЕНЗИИ ⚠️
+
+This mod is and will ALWAYS be 100% FREE and OPEN SOURCE.
+I do not have a Patreon, Ko-fi, or any paid subscriptions.
+
+Any version of this mod, or its source code, found behind a paywall, subscription service, or sold by third parties (including game developers or other content creators) is an unauthorized redistribution of this open-source project.
+
+Please do not support unauthorized monetization of community work. For your safety and to support the project, download ONLY from the official GitHub repository
+
+---
+
+Этот мод есть и всегда будет НАВСЕГДА БЕСПЛАТНЫМ и с ОТКРЫТЫМ ИСХОДНЫМ КОДОМ.
+У меня нет Patreon, Ko-fi или платных подписок.
+
+Любая версия этого мода или его исходного кода, находящаяся за платным доступом, в сервисе по подписке или продаваемая третьими лицами (включая разработчиков игры или других создателей контента), является несанкционированным распространением этого Open Source проекта.
+
+Пожалуйста, не поддерживайте несанкционированную монетизацию труда комьюнити. Для вашей безопасности и поддержки проекта скачивайте ТОЛЬКО из официального репозитория GitHub
 
 # 🛠️ MDRG Modding Toolkit / Набор инструментов для моддинга MDRG
 
