@@ -69,6 +69,22 @@ https://www.youtube.com/watch?v=r_53JwQ57hc
 
 ## 🧠 Advanced SDK: SuperParser v6.5.1 / Продвинутый SDK: SuperParser v6.5.1
 
+⚠️ DISCLAIMER / ОТВЕТСТВЕННОСТЬ ⚠️
+
+This tool is designed for educational purposes and reverse engineering of game architecture. 
+It extracts runtime data from video memory for analysis and documentation purposes only.
+
+DO NOT use this tool to extract, redistribute, or sell copyrighted game assets (textures, models, audio).
+The author is not responsible for misuse of this tool.
+
+---
+
+Этот инструмент предназначен для образовательных целей и реверс-инжиниринга архитектуры игры.
+Он извлекает данные из видеопамяти во время выполнения исключительно для анализа и документирования.
+
+НЕ используйте этот инструмент для извлечения, распространения или продажи защищенных авторским правом ассетов игры (текстур, моделей, аудио).
+Автор не несет ответственности за неправомерное использование этого инструмента.
+
 [EN]
 **SuperParser** is the diagnostic engine behind the entire MDRG Modding Toolkit. By pressing **F5** in-game, it performs a deep scan of the IL2CPP assembly and generates **15 structured reports** covering every aspect of the game's architecture.
 
