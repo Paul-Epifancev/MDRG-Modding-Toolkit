@@ -1,3 +1,14 @@
+> ⚠️ **IMPORTANT WARNING / ВАЖНОЕ ПРЕДУПРЕЖДЕНИЕ** ⚠️
+> This mod is and will **ALWAYS be 100% FREE and OPEN SOURCE**. 
+> I do not have a Patreon, Ko-fi, or any paid subscriptions. 
+> **If you see this mod or my code behind a paywall (including the developer's Patreon), it has been stolen from the community.** 
+> Please do not support content theft. Download only from this official GitHub repository.
+> 
+> *(Этот мод есть и всегда будет **НАВСЕГДА БЕСПЛАТНЫМ и с ОТКРЫТЫМ ИСХОДНЫМ КОДОМ**. 
+> У меня нет Patreon или платных подписок. 
+> **Если вы видите этот мод или мой код за платным доступом (включая Patreon разработчика), он был украден у комьюнити.** 
+> Пожалуйста, не поддерживайте воровство контента. Скачивайте только из этого официального репозитория GitHub.)*
+
 # 🛠️ MDRG Modding Toolkit / Набор инструментов для моддинга MDRG
 
 > **Professional runtime texture injection & modding suite for MDRG**
